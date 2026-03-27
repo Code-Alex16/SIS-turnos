@@ -79,7 +79,7 @@ function TurnosEnfermeria() {
               </div>
 
               <div className="destino">
-                {turnoActual.area || 'TRIAJE'}
+                {turnoActual.area || 'Box'}
               </div>
             </div>
           ) : (
