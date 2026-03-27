@@ -2,7 +2,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 
 // Plantillas
 import KioskoPage from "../feature/Turneros/page/KioskoPage";
-import Turnos from "../feature/Turnos/pages/tur";
+import Turnos from "../feature/SalaEspera/pages/tur";
 import PanelEnfermeria from "../feature/Enfermeria/pages/PanelEnfermera";
 import ErrorPage from "../feature/Error/page/404";
 
