@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&display=swap');
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+  padding: 0 4px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+/* ── Izquierda: logo ── */
+.header__logo-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 0;
+}
+
+.header__logo {
+  height: 80px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.header__logo-fallback {
+  font-size: clamp(1rem, 1.2vw, 1.3rem);
+  font-weight: 700;
+  color: #17315f;
+  margin: 0;
+}
+
+.header__subtitle {
+  font-size: clamp(0.8rem, 0.95vw, 1rem);
+  font-weight: 600;
+  color: #1f4d8f;
+  letter-spacing: 0.02em;
+}
+
+/* ── Centro: título ── */
+.header__title {
+  margin: 0;
+  text-align: center;
+  font-size: clamp(2rem, 3.2vw, 3.6rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #17315f;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  white-space: nowrap;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+/* ── Derecha: reloj (ClockDisplay se alinea solo al final) ── */
+.header > .clock {
+  justify-self: end;
+}
