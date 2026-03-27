@@ -5,14 +5,7 @@ export const serviciosMock = [
     descripcion: "Atención General.",
     espera: 10,
     colorBoton: "#0d6efd"
-  },
-  {
-    id: "procedimientos",
-    nombre: "Procedimientos",
-    descripcion: "Curaciones menores, Inyecciones, Puntos.",
-    espera: 5,
-    colorBoton: "#198754"
-  },
+  },,
   {
     id: "triaje-prioritario",
     nombre: "Triaje Grupo Prioritario",

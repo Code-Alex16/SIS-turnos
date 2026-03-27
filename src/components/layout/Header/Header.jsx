@@ -2,6 +2,7 @@ import ClockDisplay from "../Clock/ClockDisplay";
 import "./header.css";
 
 export function Header({ logoSrc, title }) {
+  const logo_reserva = "/logos/MSP.png"
   return (
     <header className="header">
 
@@ -9,7 +10,7 @@ export function Header({ logoSrc, title }) {
       <div className="header__logo-area">
         {logoSrc
           ? <img className="header__logo" src={logoSrc} alt="Ministerio de Salud Pública" />
-          : <p className="header__logo-fallback">Ministerio de Salud Pública</p>
+          : <img className="header__logo" src={logo_reserva} alt="Ministerio de Salud Pública" />
         }
       </div>
 

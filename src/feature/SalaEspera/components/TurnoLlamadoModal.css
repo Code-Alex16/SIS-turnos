@@ -1,83 +1,31 @@
-.turno-modal-backdrop {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  background: rgba(10, 18, 32, 0.6);
-  backdrop-filter: blur(6px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
+.hospital-bloque-actual {
+  width: 100%;
 }
 
-.turno-modal {
-  width: min(760px, 92vw);
-  min-height: 360px;
+.hospital-imagen-box {
+  width: 100%;
   background: #ffffff;
-  border: 6px solid #3568ad;
-  border-radius: 28px;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 28px 32px;
-  text-align: center;
+  border-radius: 18px;
+  overflow: hidden;
+  margin-bottom: 12px;
 }
 
-.turno-modal__eyebrow {
-  margin: 0 0 10px;
-  font-size: clamp(1.6rem, 2vw, 2.2rem);
+.hospital-imagen-box img {
+  display: block;
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+}
+
+.hospital-turno-actual {
+  width: 100%;
+  min-height: 82px;
+  border-radius: 18px;
+  background: #3466aa;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.2rem;
   font-weight: 700;
-  text-transform: uppercase;
-  color: #1f1f1f;
-}
-
-.turno-modal__codigo {
-  margin: 0;
-  font-size: clamp(5rem, 10vw, 8rem);
-  line-height: 1;
-  font-weight: 900;
-  color: #111111;
-}
-
-.turno-modal__mensaje {
-  margin: 16px 0 18px;
-  font-size: clamp(1.6rem, 2.2vw, 2.4rem);
-  font-weight: 600;
-  color: #333333;
-}
-
-.turno-modal__triaje {
-  min-width: 260px;
-  min-height: 70px;
-  border-radius: 16px;
-  padding: 14px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: clamp(1.7rem, 2vw, 2.3rem);
-  font-weight: 900;
-  color: #030101;
-}
-
-.turno-modal.triaje-1 .turno-modal__triaje {
-  background: #d32f2f;
-}
-
-.turno-modal.triaje-2 .turno-modal__triaje {
-  background: #f57c00;
-}
-
-.turno-modal.triaje-3 .turno-modal__triaje {
-  background: #fbc02d;
-  color: #222222;
-}
-
-.turno-modal.triaje-4 .turno-modal__triaje {
-  background: #388e3c;
-}
-
-.turno-modal.triaje-5 .turno-modal__triaje {
-  background: #1976d2;
 }

@@ -1,18 +1,21 @@
+import React from "react";
 import "./TurnoLlamadoModal.css";
 
 function TurnoLlamadoModal({ turno }) {
-  if (!turno) return null;
-
   return (
-    <div className="turno-modal-backdrop">
-      <div className={`turno-modal triaje-${turno.triaje}`}>
-        <p className="turno-modal__eyebrow">Nuevo llamado</p>
-        <h2 className="turno-modal__codigo">{turno.codigo}</h2>
-        <p className="turno-modal__mensaje">Diríjase a {turno.area}</p>
-        <div className="turno-modal__triaje">TRIAJE {turno.triaje}</div>
+    <div className="hospital-bloque-actual">
+      <div className="hospital-imagen-box">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/9/99/Hospital_de_Especialidades_Portoviejo.jpg"
+          alt="Hospital"
+        />
+      </div>
+
+      <div className="hospital-turno-actual">
+        {turno ? turno.codigo : "---"}
       </div>
     </div>
   );
 }
 
-export default TurnoLlamadoModal;
+export default React.memo(TurnoLlamadoModal);

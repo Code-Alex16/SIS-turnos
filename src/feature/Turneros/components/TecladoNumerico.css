@@ -1,18 +1,17 @@
-
 .teclado-contenedor {
   width: 100%;
 }
 
 .teclado-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 10px; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
   margin-bottom: 20px;
 }
 
 .tecla-btn {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   color: #1a498b;
   background-color: #f1f5f9;
@@ -20,49 +19,21 @@
   border-radius: 10px;
   padding: 15px 0;
   cursor: pointer;
-  box-shadow: 0 4px 0 #cbd5e1; 
+  box-shadow: 0 4px 0 #cbd5e1;
   transition: transform 0.1s;
 }
 
 .tecla-btn:active {
-  transform: translateY(4px); 
-  box-shadow: none; 
-}
-
-
-.tecla-0 {
-  grid-column: span 2;
-}
-
-
-.tecla-borrar {
-  font-size: 28px;
-  background-color: white;
-  color: #1a498b;
-}
-
-/* Botón de Imprimir verde */
-.btn-imprimir {
-  font-family: 'Barlow Condensed', sans-serif;
-  width: 100%;
-  background-color: #90ee90; /* Verde claro */
-  border: 2px solid #32cd32; /* Verde fuerte */
-  color: white;
-  font-size: 32px;
-  font-weight: 700;
-  padding: 15px 0;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 0 5px 0 #32cd32;
-  transition: transform 0.1s;
-}
-
-.btn-imprimir:active {
-  transform: translateY(5px);
+  transform: translateY(4px);
   box-shadow: none;
 }
 
-.print-icon {
-  margin-right: 10px;
+.tecla-0 {
+  grid-column: auto;
+}
+
+.tecla-borrar {
   font-size: 28px;
+  background-color: #f1f5f9;
+  color: #1a498b;
 }

@@ -96,7 +96,7 @@
   border-radius: 14px;
   border: 2px solid var(--gris-borde);
   background: var(--gris-suave);
-  font-size: clamp(1.8rem, 3vw, 3rem);
+  font-size: clamp(1.5rem, 3vw, 3rem);
   font-weight: 700;
   color: var(--azul-oscuro);
   letter-spacing: 0.12em;

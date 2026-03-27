@@ -1,12 +1,11 @@
 import React from "react";
+import { ArrowLeftToLine } from "lucide-react";
 import "./TecladoNumerico.css";
 
 function TecladoNumerico({
   alPresionarNumero,
-  alBorrar,
   alAbrirTecladoAlfabetico,
-  alContinuar,
-  deshabilitarContinuar,
+  alBorrar,
 }) {
   const numeros = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
@@ -34,25 +33,20 @@ function TecladoNumerico({
 
         <button
           type="button"
-          className="tecla-btn"
+          className="tecla-btn tecla-0"
           onClick={() => alPresionarNumero("0")}
         >
           0
         </button>
 
-        <button type="button" className="tecla-btn tecla-borrar" onClick={alBorrar}>
-          &#9003;
+        <button
+          type="button"
+          className="tecla-btn tecla-borrar"
+          onClick={alBorrar}
+        >
+          <ArrowLeftToLine size={32}/>
         </button>
       </div>
-
-      <button
-        type="button"
-        className="btn-continuar"
-        onClick={alContinuar}
-        disabled={deshabilitarContinuar}
-      >
-        CONTINUAR
-      </button>
     </div>
   );
 }

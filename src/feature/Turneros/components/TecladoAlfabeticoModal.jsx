@@ -46,10 +46,6 @@ function TecladoAlfabeticoModal({ abierto, valorActual, maxLength, alCerrar, alA
           <button type="button" className="tecla-btn tecla-btn--sm tecla-borrar" onClick={alBorrar}>
             BORRAR
           </button>
-
-          <button type="button" className="tecla-btn tecla-btn--sm tecla-confirmar" onClick={alCerrar}>
-            VOLVER
-          </button>
         </div>
       </div>
     </div>
